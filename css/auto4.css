@@ -1,0 +1,126 @@
+/* Автошкола № 4: фирменные цвета (кирпичный и тёмно-синий, как на auto4-spb.ru) и свои живые фоны */
+:root{--spot:194,65,12}
+html[data-theme="light"]{--accent:#9a3412;--accent-d:#7c2d12;--accent-l:#c2410c;--accent-soft:rgba(154,52,18,.12);--on-accent:#fff}
+.btn-glass.btn-book,.btn-glass.btn-book:hover,.hdr .btn-primary,.mmenu .btn-primary,.sec:not(.sec-hero) .btn-primary,.btn-primary,
+html[data-theme="light"]:not([data-hc="1"]) .hdr .btn-primary,html[data-theme="light"]:not([data-hc="1"]) .sec:not(.sec-hero) .btn-primary{background:#c2410c;border-color:#c2410c;color:#fff}
+.btn-glass.btn-book{box-shadow:0 8px 26px rgba(194,65,12,.35)}
+.nk-sec .sec-bg{background:linear-gradient(160deg,#fbf4ef 0%,#f1e1d6 100%)}
+html[data-theme="dark"] .nk-sec .sec-bg{background:linear-gradient(160deg,#17202c 0%,#222c3a 100%)}
+html[data-theme="light"]:not([data-hc="1"]) .sec:not(.sec-hero) .kicker,html[data-theme="light"]:not([data-hc="1"]) .hero-plq .kicker{color:#9a3412}
+html[data-theme="light"]:not([data-hc="1"]) .sec:not(.sec-hero) .kicker::before,html[data-theme="light"]:not([data-hc="1"]) .hero-plq .kicker::before{background:#9a3412}
+.hero-cats .ico{color:#c2410c}
+.hero-cats li{color:#3b1a0e;border-color:rgba(154,52,18,.3)}
+html[data-theme="light"]:not([data-hc="1"]) .hdr-a11y #themeBtn{border-color:rgba(154,52,18,.6);background:rgba(154,52,18,.1);color:#9a3412}
+.soc-max .soc-i{background:linear-gradient(135deg,#2f80ff,#7b3dff)}
+.soc-max .soc-i svg{width:26px;height:26px}
+@media screen and (min-width:768px){.a4-soc2.hero-soc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.hw{white-space:nowrap}
+@media screen and (min-width:768px){.hw{font-size:calc((var(--plq-w) - 2 * var(--plq-pad)) / 7.4)}}
+@media screen and (max-width:767px){.hw{font-size:clamp(30px,calc(10.2*var(--vwu,1vw)),48px)}}
+
+/* третий экран: группы и цены */
+.a4-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:4px}
+.a4-g{padding:16px 18px}
+.a4-gh b{display:block;font-size:19px}
+.a4-gh small{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}
+.a4-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:10px 0 8px}
+.a4-price b{font-size:26px;color:#9a3412;white-space:nowrap}
+html[data-theme="dark"] .a4-price b{color:#fb923c}
+.a4-price span{font-size:13.5px;color:var(--muted)}
+.a4-gl{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.a4-gl li{display:flex;justify-content:space-between;gap:10px;padding:7px 10px;border-radius:10px;background:rgba(154,52,18,.07);font-weight:600;font-size:15px}
+.a4-gl li small{font-weight:500;color:var(--muted);white-space:nowrap}
+.a4-gt{margin:8px 0 0;font-size:13.5px;color:var(--muted)}
+.a4-notes{list-style:none;margin:12px 0 0;padding:12px 16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px;border-radius:14px;background:rgba(255,255,255,.72);font-size:14.5px}
+html[data-theme="dark"] .a4-notes{background:rgba(20,28,40,.72)}
+.a4-notes li{display:flex;gap:8px;align-items:flex-start}
+.a4-notes .ico{width:18px;height:18px;flex:none;color:#c2410c;margin-top:1px}
+.a4-cta{margin-top:12px;display:flex;justify-content:center}
+/* «Как нас найти»: два филиала */
+.a4-contacts{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:14px;align-items:stretch}
+.a4-br2{display:grid;gap:12px}
+.a4-b{padding:14px 16px}
+.a4-bh{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin-bottom:8px}
+.a4-bh .ico{width:20px;height:20px;color:#c2410c}
+.a4-bh b{font-size:18px}
+.a4-bh small{color:var(--muted);font-size:13.5px}
+.a4-bl{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.a4-bl li{display:grid;gap:1px;font-size:15px}
+.a4-bl small{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.a4-bl .addr-note{font-size:13.5px;color:var(--muted)}
+.a4-contacts .mapbox{display:flex;flex-direction:column}
+.a4-contacts .map{flex:1 1 auto;min-height:220px}
+.a4-mail{display:flex;align-items:center;gap:8px;margin:10px 0 0;font-size:15px}
+.a4-mail .ico{width:18px;height:18px;color:#c2410c}
+@media (max-width:767px){
+  .a4-groups,.a4-contacts,.a4-notes{grid-template-columns:1fr}
+  .a4-groups{gap:10px}
+  .a4-g{padding:12px 14px}
+  .a4-price{margin:6px 0}
+  .a4-price b{font-size:22px}
+  .a4-notes{padding:10px 12px;font-size:13.5px;margin-top:10px}
+  .a4-gt{display:none}
+  .a4-contacts .map{min-height:150px}
+  .a4-b{padding:12px 14px}
+}
+
+/* живые фоны: автодром (машина проходит змейку) и разводные мосты над Невой */
+.a4bg{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.a4bg svg{width:100%;height:100%;display:block}
+.a4d-pad{fill:rgba(60,70,84,.13)}
+.a4d-line{stroke:rgba(255,255,255,.75);stroke-width:5;stroke-dasharray:34 26;fill:none}
+.a4d-park{stroke:rgba(255,255,255,.8);stroke-width:4;fill:none}
+.a4c-cone{fill:#ea6a2a}.a4c-cone-b{fill:#c2410c}
+.a4d-path{fill:none;stroke:rgba(194,65,12,.22);stroke-width:3;stroke-dasharray:2 12;stroke-linecap:round}
+.a4d-body{fill:#c2410c}.a4d-glass{fill:#dbe7f3}.a4d-lamp{fill:#fff3c4}
+.a4d-flag path{stroke:#475569;stroke-width:4;fill:none}.a4d-flagc{fill:#c2410c;stroke:none!important;animation:a4flag 1.6s ease-in-out infinite;transform-origin:0 -70px}
+@keyframes a4flag{50%{transform:skewY(-6deg) scaleX(.92)}}
+html[data-theme="dark"] .a4d-pad{fill:rgba(255,255,255,.05)}
+html[data-theme="dark"] .a4d-line,html[data-theme="dark"] .a4d-park{stroke:rgba(255,255,255,.35)}
+.a4-drom{opacity:.75}
+.a4b-stars circle{fill:#fff;opacity:0;animation:a4tw 4s ease-in-out infinite}
+.a4b-stars circle:nth-child(2n){animation-delay:1.3s}.a4b-stars circle:nth-child(3n){animation-delay:2.6s}
+@keyframes a4tw{50%{opacity:.85}}
+.a4b-city path{fill:rgba(30,41,59,.16)}
+.a4b-water{fill:rgba(31,78,121,.16)}
+.a4b-wave{stroke:rgba(255,255,255,.55);stroke-width:3;stroke-dasharray:60 40;fill:none;animation:a4wave 6s linear infinite}
+@keyframes a4wave{to{stroke-dashoffset:-200}}
+.a4b-bank{stroke:rgba(30,41,59,.25);stroke-width:4}
+.a4b-pier{fill:rgba(30,41,59,.28)}
+.a4b-deck{fill:#7c2d12}
+.a4b-lamp{fill:#fbbf24}
+.a4b-leaf{animation:a4open 14s ease-in-out infinite}
+.a4b-l{--d:-58deg}.a4b-r{--d:58deg}
+.a4b-br1 .a4b-leaf{animation-delay:-1s}.a4b-br2 .a4b-leaf{animation-delay:-10s}
+@keyframes a4open{0%,18%{transform:rotate(0)}34%,62%{transform:rotate(var(--d))}78%,100%{transform:rotate(0)}}
+.a4b-boat{fill:#334155;animation:a4boat 14s linear infinite}
+.a4b-boat rect{fill:#475569}
+@keyframes a4boat{0%{transform:translate(-120px,672px)}100%{transform:translate(1720px,672px)}}
+html[data-theme="dark"] .a4b-city path{fill:rgba(0,0,0,.35)}
+html[data-theme="dark"] .a4b-water{fill:rgba(10,30,55,.6)}
+html[data-theme="dark"] .a4b-wave{stroke:rgba(255,255,255,.18)}
+html[data-theme="light"] .a4b-stars{display:none}
+.a4-bridges{opacity:.85}
+.sec:not(.active) .a4bg *{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){.a4bg *{animation:none!important}}
+/* телефон: экраны без ужатия шрифта — лишнее прячем (запись есть в нижней панели, карта — кнопкой «На Яндекс.Картах») */
+@media (max-width:767px){
+  .a4-cta{display:none}
+  .a4-notes li:nth-child(1),.a4-notes li:nth-child(3){display:none}
+  .a4-contacts .map{display:none}
+  .a4-mail{margin-top:0}
+  .a4-gh small{font-size:12.5px}
+  .a4-gl li{padding:6px 9px;font-size:14px}
+}
+/* правки после проверки */
+.hw .ch{white-space:pre}
+html .sec-hero .hero-cta .btn-glass.btn-book,html .sec-hero .hero-cta .btn-glass.btn-book:hover{background:rgba(194,65,12,.95)!important;color:#fff!important;border-color:transparent!important}
+.a4-bl .addr-link{justify-self:start}
+.a4-g,.a4-b,.a4-contacts .mapbox{background:rgba(255,255,255,.92)!important}
+html[data-theme="dark"] .a4-g,html[data-theme="dark"] .a4-b,html[data-theme="dark"] .a4-contacts .mapbox{background:rgba(23,32,44,.92)!important}
+.a4-notes{background:rgba(255,255,255,.9)}
+.a4-drom{opacity:.5}
+.a4-bridges{opacity:.6}
+.a4b-deck{fill:#b4532a}
+.a4-bl .addr-link{display:inline;border-bottom:0;padding:0;margin:0;text-decoration:underline;text-decoration-color:rgba(154,52,18,.45);text-underline-offset:3px}
+@media (max-width:767px){.a4-contacts .mapbox{padding:12px 14px}}
