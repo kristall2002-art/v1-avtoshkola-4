@@ -124,3 +124,23 @@ html[data-theme="dark"] .a4-g,html[data-theme="dark"] .a4-b,html[data-theme="dar
 .a4b-deck{fill:#b4532a}
 .a4-bl .addr-link{display:inline;border-bottom:0;padding:0;margin:0;text-decoration:underline;text-decoration-color:rgba(154,52,18,.45);text-underline-offset:3px}
 @media (max-width:767px){.a4-contacts .mapbox{padding:12px 14px}}
+/* яркий фон: фирменные кирпично-оранжевый и тёмно-синий насыщеннее и контрастнее (Сергей 12.11) */
+.nk-sec .sec-bg{background:radial-gradient(circle at 90% 10%,rgba(255,214,102,.8),rgba(255,214,102,0) 36%),radial-gradient(circle at 6% 94%,rgba(30,58,138,.6),rgba(30,58,138,0) 44%),linear-gradient(150deg,#ffa057 0%,#f26a1b 45%,#c2410c 100%)}
+html[data-theme="dark"] .nk-sec .sec-bg{background:radial-gradient(circle at 90% 10%,rgba(242,106,27,.4),rgba(242,106,27,0) 40%),linear-gradient(150deg,#4a1d08 0%,#2a1a24 50%,#16213a 100%)}
+.a4-drom,.a4-bridges{opacity:.95}
+.a4d-pad{fill:rgba(30,41,59,.3)}
+.a4d-line,.a4d-park{stroke:rgba(255,255,255,.9)}
+.a4c-cone{fill:#fff4e0}.a4c-cone-b{fill:#1e3a5f}
+.a4d-path{stroke:rgba(255,255,255,.55)}
+.a4d-body{fill:#1e3a5f}
+.a4d-flagc{fill:#1e3a5f}
+.a4b-city path{fill:rgba(30,41,59,.32)}
+.a4b-water{fill:rgba(30,58,95,.5)}
+.a4b-wave{stroke:rgba(255,255,255,.7)}
+.a4b-deck{fill:#1e3a5f}
+.a4b-pier{fill:rgba(30,41,59,.45)}
+.a4b-boat{fill:#1e293b}
+html[data-theme="light"] .a4b-stars{display:none}
+/* версия для слабовидящих: без живых фонов и анимаций */
+html[data-hc="1"] .a4bg{display:none!important}
+html[data-hc="1"] *{animation:none!important;transition:none!important}
